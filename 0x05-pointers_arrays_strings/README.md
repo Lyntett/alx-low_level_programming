@@ -1,0 +1,1 @@
+0x05-printers_array_strings
