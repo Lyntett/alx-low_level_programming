@@ -1,17 +1,18 @@
-
-#include <stdio.h>
-
-void _puts(char *str);
+#include "main.h"
 /**
- * main - prints a string
+ * _puts - prints a string
+ * @str: the string
  *
- * Return: Always 0
+ * Return: the length of the sting
  */
-int main(void)
+void _puts(char *str)
 {
-	char *str;
+	int i = 0;
 
-	str = "Holberton!";
-	_puts(str);
-	return (0);
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
